@@ -1,4 +1,5 @@
-from .secret import PASSWORD, DB
+PASSWORD = 'asqw'
+DB='name-db'
 
 def get_database():
 
