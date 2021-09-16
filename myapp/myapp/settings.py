@@ -3,7 +3,7 @@ from environs import Env
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 env = Env()
 env.read_env()
@@ -50,9 +50,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, "web_check/templates/web_check"),
-            os.path.join(BASE_DIR, "api_food"),
-   
+            os.path.join(BASE_DIR, "myapp/web_check/templates/web_check"),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
